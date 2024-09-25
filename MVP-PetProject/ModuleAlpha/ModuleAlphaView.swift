@@ -12,7 +12,7 @@ final class ModuleAlphaView: UIView {
     private lazy var label: UILabel = {
         let label = UILabel()
         label.font = .boldSystemFont(ofSize: 25)
-        label.text = "Some text"
+        label.text = "Module Alpha"
         label.numberOfLines = 0
         label.lineBreakMode = .byWordWrapping
         label.textAlignment = .center
