@@ -13,7 +13,6 @@ protocol ModuleAlphaRouterProtocol: AnyObject {
 
 final class ModuleAlphaRouter: ModuleAlphaRouterProtocol {
     
-    
     private let assembly: ModuleBetaAssembly
     
     private weak var root: UIViewController?

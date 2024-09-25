@@ -8,11 +8,22 @@
 import UIKit
 
 protocol ModuleBetaRouterProtocol: AnyObject {
-//    func openModuleBeta(with param: String)
+    func popToRoot()
 }
 
 final class ModuleBetaRouter {
-//    private let factory: ModuleBetaAssembly
+    private weak var root: UIViewController?
+    private let assembly: ModuleAlphaAssembly
     
+    init(assembly: ModuleAlphaAssembly) {
+        self.assembly = assembly
+    }
     
+    func setRootViewController(root: UIViewController) {
+        self.root = root
+    }
+    
+    func popToRoot() {
+        root?.navigationController?.popToRootViewController(animated: true)
+    }
 }

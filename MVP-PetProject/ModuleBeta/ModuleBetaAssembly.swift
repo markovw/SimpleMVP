@@ -10,15 +10,18 @@ import UIKit
 final class ModuleBetaAssembly {
     func make() -> UIViewController {
         
-        let service = NetworkService()
+//        let service = NetworkService()
         
-        let router = ModuleBetaRouter()
+        let router = ModuleBetaRouter(
+            assembly: ModuleAlphaAssembly()
+        )
         
-        let presenter = ModuleBetaPresenter()
+        let presenter = ModuleBetaPresenter(router: router)
         
         let vc = ModuleBetaViewController(presenter: presenter)
         
         presenter.view = vc
+        router.setRootViewController(root: vc)
         
         return vc
     }
