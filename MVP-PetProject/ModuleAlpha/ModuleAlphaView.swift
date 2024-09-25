@@ -24,7 +24,7 @@ final class ModuleAlphaView: UIView {
         button.setTitle("Go to second", for: .normal)
         button.backgroundColor = .systemBlue.withAlphaComponent(0.7)
         button.setTitleColor(.white, for: .normal)
-        button.layer.cornerRadius = 5
+        button.layer.cornerRadius = 7
         button.addTarget(self, action: #selector(onTapped), for: .touchUpInside)
         return button
     }()
