@@ -49,7 +49,6 @@ final class ModuleAlphaView: UIView {
             self.label.text = usersText
         }
     }
-    
 }
 
 private extension ModuleAlphaView {
