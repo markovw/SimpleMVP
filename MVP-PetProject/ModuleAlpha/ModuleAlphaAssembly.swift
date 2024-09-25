@@ -10,7 +10,6 @@ import UIKit
 final class ModuleAlphaAssembly {
     
     func make() -> UIViewController {
-        
         let service = NetworkService()
         
         let router = ModuleAlphaRouter(
