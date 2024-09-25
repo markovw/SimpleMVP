@@ -21,7 +21,7 @@ final class ModuleAlphaView: UIView {
     
     private lazy var button: UIButton = {
         let button = UIButton(type: .system)
-        button.setTitle("Open second", for: .normal)
+        button.setTitle("Go to second", for: .normal)
         button.backgroundColor = .systemBlue.withAlphaComponent(0.7)
         button.setTitleColor(.white, for: .normal)
         button.layer.cornerRadius = 10
